@@ -1,10 +1,12 @@
+---
+
 # Indoor Scene Segmentation with PlaneNet (Wall & Floor Detection)
 
 This project uses a customized PlaneNet architecture to perform semantic segmentation of **walls** and **floors** from the ADE20K dataset. It supports training, validation, inference, and a user-friendly Streamlit demo.
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 IndoorSegmentation/
@@ -26,6 +28,7 @@ IndoorSegmentation/
 │   └── app.py               # Streamlit app interface
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
@@ -160,14 +163,14 @@ Results are printed after each validation epoch.
 
 ## Status
 
-*  PlaneNet integrated and adapted for binary class segmentation
-*  Mask preprocessing and class remapping
-*  Streamlit demo for visualization
-*  Modular dataset loader and metrics
+* PlaneNet integrated and adapted for binary class segmentation
+* Mask preprocessing and class remapping
+* Streamlit demo for visualization
+* Modular dataset loader and metrics
 
 ---
 
-##  Notes
+## Notes
 
 * The ADE20K masks are remapped:
 
@@ -175,7 +178,9 @@ Results are printed after each validation epoch.
   * Wall → 1
   * All others → 255 (ignored)
 
-* Dataset is limited to **1500 random valid images**  for faster CPU training. You can increase this in `utils/dataset.py`.
+* Dataset is limited to **1500 random valid images** for faster CPU training. You can increase this in `utils/dataset.py`.
 
 ---
+
+
 
